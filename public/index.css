@@ -19,7 +19,7 @@ ul {
 }
 
 header {
-  background-image: url("/public/Images/pexels-daniela-constantini-5591676.jpg");
+  background-image: url("../public/Images/pexels-daniela-constantini-5591676.jpg");
   background-repeat: no-repeat;
   height: 300px;
 }
