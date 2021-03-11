@@ -9,24 +9,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>02 Inspector Clouseau</title>
   </head>
-  <body>
+  <body onresize="reDisplay()">
     <div id="container">
       <header>
         <h1 id="companyName"></h1>
         <h2 id="companyMoto"></h2>
       </header>
       <main>
-        <h1 id="title">Welcome to Joe's! Rest easy traveler!</h1>
+        <h1 id="title">Inspector Clouseau Private Investigator</h1>
+        <h2 id="bodyTitle">What I Learned:</h2>
         <ul>
-            <li>Ability to link Javascript, HTML, and CSS file together.</li>
-            <li>Use css to style a page correctly.</li>
-            <li>Push code to Github and Deploy it on Netlify.</li>
-            <li>Use Javascript to insert text into HTML element, insert the current date, and prompt a user for input.</li>
+            <li>Use Javascript to show document properties.</li>
+            <li>Use Javascript to show window properties.</li>
+            <li>Use CSS to create an individual design style for the page.</li>
         </ul>
-        <h2 id="date"></h2>
-        <p id="nameVisitor"></p>
+        <h2 id="bodyTitle">Window Properties</h2>
+        <p id="myWindow"></p>
+
+        <h2 id="bodyTitle">Document Properties</h2>
+        <p id="myDocument"></p>
       </main>
       <footer>&copy; 2021 &bull; Built by Jeremy Jensen</footer>
       <script type="text/javascript" src="main.js"></script>

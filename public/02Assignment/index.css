@@ -46,25 +46,25 @@ header {
   text-align: center;
 }
 
+#bodyTitle {
+  padding-top: 0.5rem;
+}
+
 ul {
-  padding: 1rem 0 0 1rem;
+  padding: 0.5rem 0 0.5rem 1rem;
 }
 
 li {
-  list-style-type: circle;
-}
-
-#date {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-#nameVisitor {
-  margin: 1rem 0 1rem 0;
+  list-style-type: square;
 }
 
 footer {
   text-align: center;
-  background-color: rgb(139, 166, 167);
+  background-color: rgb(95, 59, 25);
   padding: 0.3rem 0 0.3rem 0;
+  color: rgb(255, 255, 255);
+}
+
+#myDocument {
+    padding-bottom: 1rem;
 }
