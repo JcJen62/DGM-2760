@@ -1,0 +1,70 @@
+/* CSS reset */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("public/Images/philatelist-1844078_1280.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#companyName {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 1rem;
+  font-size: 3em;
+}
+
+#companyMoto {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+}
+
+#title {
+  text-align: center;
+}
+
+ul {
+  padding: 1rem 0 0 1rem;
+}
+
+li {
+  list-style-type: circle;
+}
+
+#date {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#nameVisitor {
+  margin: 1rem 0 1rem 0;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(139, 166, 167);
+  padding: 0.3rem 0 0.3rem 0;
+}
