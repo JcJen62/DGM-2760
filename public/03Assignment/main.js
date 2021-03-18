@@ -5,12 +5,13 @@ document.querySelector("#myInstructions").innerText =
 
 let correctNumber = Math.floor(Math.random() * 15);
 
-console.log(`The correct number is ${correctNumber}`);
 
 let guessed = false;
 let totalGuesses = 0;
 let gamerGuess = 0;
 correctNumber += 1;
+
+console.log(`The correct number is ${correctNumber}`);
 
 function checkGuess() {
   totalGuesses += 1;
@@ -22,9 +23,9 @@ function checkGuess() {
   if (intGuess === correctNumber) {
     feedback.innerText = "You win!!";
     awardGiven();
-  } else if (intGuess > correctNumber && gamerGuess < 16) {
+  } else if (intGuess > correctNumber && intGuess < 16) {
     feedback.innerText = "Too high, try again";
-  } else if (intGuess < correctNumber && gamerGuess > 0) {
+  } else if (intGuess < correctNumber && intGuess > 0) {
     feedback.innerText = "Too low, try again";
   } else {
     feedback.innerText =
