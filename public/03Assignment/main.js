@@ -36,17 +36,31 @@ function checkGuess() {
   document.querySelector("#attempts").innerText = totalGuesses;
 }
 
+let imagePath = ' '
 function awardGiven() {
   switch (totalGuesses) {
     case 1:
     case 2:
     case 3:
+      imagePath = '../Images/Gold.png'
+      break;
+    case 4:
+    case 5:
+    case 6:
+      imagePath = '../Images/Silver.png'
+      break;
+    case 7:
+      imagePath = '../Images/Bronze.png'
   }
 
   const awardImage = document.createElement("img");
-  awardImage.setAttribute('src', '../Images/kisspng-computer-icons-medal-clip-art-5aed4b6e356353.9090463615255007822187.png')
+  awardImage.setAttribute('src', imagePath)
 
   const ribbon = document.querySelector("#ribbon");
 
   ribbon.appendChild(awardImage);
+
+  if (ribbon.hasChildNodes()){
+    
+  }
 }
