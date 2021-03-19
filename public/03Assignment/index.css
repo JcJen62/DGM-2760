@@ -18,6 +18,11 @@ ul {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
 header {
   background-image: url("../Images/pexels-kevin-bidwell-1373100.jpg");
   background-repeat: no-repeat;
@@ -32,7 +37,6 @@ header {
 #companyName {
   text-align: center;
   color: rgb(255, 255, 255);
-  padding-top: 1rem;
   font-size: 3em;
 }
 
@@ -58,9 +62,27 @@ li {
   list-style-type: square;
 }
 
+#containerRow {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#rowHead {
+  padding-left: 3rem;
+}
+
+#attempts {
+  padding-left: 3.3rem;
+}
+
+#feedback {
+  padding-left: 3rem;
+}
+
 footer {
   text-align: center;
   background-color: rgb(158, 181, 185);
   padding: 0.3rem 0 0.3rem 0;
   color: rgb(255, 255, 255);
+  margin-top: 1rem;
 }

@@ -21,44 +21,41 @@
         <h1 id="title">The High-Low Guessing Game!</h1>
         <h2 id="bodyTitle">What I Learned:</h2>
         <ul>
-            <li>Start to implement the use of functions</li>
-            <li>Adding If Else statement</li>
-            <li>Make use of innerText for user feebback</li>
-            <li>Possible use of Switch statements</li>
-            <li>Use CSS to create an individual design style for the page.</li>
+          <li>Start to implement the use of functions</li>
+          <li>Adding If Else statement</li>
+          <li>Make use of innerText for user feebback</li>
+          <li>Possible use of Switch statements</li>
+          <li>Use CSS to create an individual design style for the page.</li>
         </ul>
         <h2 id="bodyTitle">Instructions</h2>
         <p id="myInstructions"></p>
 
-        <div class="part1">
+        <div id="containerRow">
+          <div class="part1">
             <h2>Play</h2>
             <div>
-                <input id="guess" type="number" placeholder="number" />
-                <button onclick="checkGuess()" id="checkGuess">Try Your Guess</button>
+              <input id="guess" type="number" placeholder="number" />
+              <button onclick="checkGuess()" id="checkGuess">
+                Try Your Guess
+              </button>
             </div>
+          </div>
+
+          <div class="part2">
+            <h2 id="rowHead">Trys</h2>
+            <div id="attempts"></div>
+          </div>
+
+          <div class="part3">
+            <h2 id="rowHead">Feedback</h2>
+            <div id="feedback"></div>
+          </div>
+
+          <div class="part4">
+            <h2 id="rowHead">Award</h2>
+            <div id="ribbon"></div>
+          </div>
         </div>
-
-        <div class="part2">
-            <h2>Trys</h2>
-            <div id="attempts">
-
-            </div>
-        </div>
-
-        <div class="part3">
-            <h2>Feedback</h2>
-            <div id="feedback">
-
-            </div>
-        </div>
-
-        <div class="part4">
-            <h2>Award</h2>
-            <div id="ribbon">
-
-            </div>
-        </div>
-
       </main>
       <footer>&copy; 2021 &bull; Built by Jeremy Jensen</footer>
       <script type="text/javascript" src="main.js"></script>
