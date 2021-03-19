@@ -5,7 +5,6 @@ document.querySelector("#myInstructions").innerText =
 
 let correctNumber = Math.floor(Math.random() * 15);
 
-
 let guessed = false;
 let totalGuesses = 0;
 let gamerGuess = 0;
@@ -16,7 +15,7 @@ console.log(`The correct number is ${correctNumber}`);
 function checkGuess() {
   totalGuesses += 1;
   gamerGuess = document.querySelector("#guess").value;
-  let intGuess = parseInt(gamerGuess)
+  let intGuess = parseInt(gamerGuess);
 
   const feedback = document.querySelector("#feedback");
 
@@ -36,31 +35,29 @@ function checkGuess() {
   document.querySelector("#attempts").innerText = totalGuesses;
 }
 
-let imagePath = ' '
+let imagePath = " ";
 function awardGiven() {
   switch (totalGuesses) {
     case 1:
     case 2:
     case 3:
-      imagePath = '../Images/Gold.png'
+      imagePath = "../Images/Gold.png";
       break;
     case 4:
     case 5:
     case 6:
-      imagePath = '../Images/Silver.png'
+      imagePath = "../Images/Silver.png";
       break;
     case 7:
-      imagePath = '../Images/Bronze.png'
+      imagePath = "../Images/Bronze.png";
   }
 
+  document.getElementById("checkGuess").disabled = true;
+
   const awardImage = document.createElement("img");
-  awardImage.setAttribute('src', imagePath)
+  awardImage.setAttribute("src", imagePath);
 
   const ribbon = document.querySelector("#ribbon");
 
   ribbon.appendChild(awardImage);
-
-  if (ribbon.hasChildNodes()){
-    
-  }
 }
