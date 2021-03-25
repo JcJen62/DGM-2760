@@ -1,0 +1,88 @@
+/* CSS reset */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+header {
+  background-image: url("../Images/Fortune.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#companyName {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+}
+
+#companyMoto {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+}
+
+#title {
+  text-align: center;
+}
+
+#bodyTitle {
+  padding-top: 0.5rem;
+}
+
+ul {
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+li {
+  list-style-type: square;
+}
+
+#containerRow {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#rowHead {
+  padding-left: 3rem;
+}
+
+#attempts {
+  padding-left: 3.3rem;
+}
+
+#feedback {
+  padding-left: 3rem;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(16, 72, 110);
+  padding: 0.3rem 0 0.3rem 0;
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
