@@ -86,6 +86,6 @@ function getFortune(fate) {
 const monthName = getMonth(month)
 const getFate = getFortune(fate)
 
-const fortuneRevealed = `On ${monthName} ${day}, you will ${fate}`
+const fortuneRevealed = `On ${monthName} ${day}, you will ${getFate}`
 
 document.querySelector('#myFortune').innerText = fortuneRevealed
