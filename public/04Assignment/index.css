@@ -67,16 +67,8 @@ li {
   margin-top: 1rem;
 }
 
-#rowHead {
-  padding-left: 3rem;
-}
-
-#attempts {
-  padding-left: 3.3rem;
-}
-
-#feedback {
-  padding-left: 3rem;
+#myFortune {
+  padding-left: 2rem;
 }
 
 footer {

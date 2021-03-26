@@ -8,10 +8,6 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let month = getRandomInt(1, 12);
-let fate = getRandomInt(1, 5)
-let day = getRandomInt(1, 30)
-
 function getMonth(month) {
   let name;
   switch (month) {
@@ -59,33 +55,40 @@ function getMonth(month) {
 }
 
 function getFortune(fate) {
-  let message
+  let message;
   switch (fate) {
     case 1:
-      message = "be the strongest person in the world!"
+      message = "be the strongest person in the world!";
       break;
     case 2:
-      message = "win $1,000,000 and never have to work again in your life!"
+      message = "win $1,000,000 and never have to work again in your life!";
       break;
     case 3:
-      message = "meet your favorite singer and get backstage passes to their next concert!"
+      message =
+        "meet your favorite singer and get backstage passes to their next concert!";
       break;
     case 4:
-      message = "Win a noble prize, and be honored for your greatness!"
+      message = "Win a noble prize, and be honored for your greatness!";
       break;
     case 5:
-      message = "Get a genies lamp and earn 3 wishes with no rules attached."
+      message = "Get a genies lamp and earn 3 wishes with no rules attached.";
       break;
     default:
-      message = "An error in you fortune has occured..."
+      message = "An error in you fortune has occured...";
       break;
   }
-  return message
+  return message;
 }
 
-const monthName = getMonth(month)
-const getFate = getFortune(fate)
+function onClick() {
+  let month = getRandomInt(1, 12);
+  let fate = getRandomInt(1, 5);
+  let day = getRandomInt(1, 30);
 
-const fortuneRevealed = `On ${monthName} ${day}, you will ${getFate}`
+  let monthName = getMonth(month);
+  let getFate = getFortune(fate);
 
-document.querySelector('#myFortune').innerText = fortuneRevealed
+  let fortuneRevealed = `On ${monthName} ${day}, you will ${getFate}`;
+
+  document.querySelector("#myFortune").innerText = fortuneRevealed;
+}
