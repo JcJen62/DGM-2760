@@ -45,7 +45,7 @@ document.querySelector("#removeTreeOne").onclick = () => {
 };
 
 document.querySelector("#removeTreeTwo").onclick = () => {
-  if (trees.length > 2) {
+  if (trees.length > 1) {
     trees.splice(1, 1);
     listTrees();
   } else if (trees.length === 1) {
