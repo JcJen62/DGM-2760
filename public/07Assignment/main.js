@@ -8,7 +8,7 @@ const pizza = {
     size: 'small',
     topping: 'pepperoni',
     buildPizza: function () {
-        message = `Baking a pizza on a ${pizza.crust} crust with ${pizza.topping} as a topping and cheese!`
+        message = `Baking a ${pizza.size} pizza on a ${pizza.crust} crust with ${pizza.topping} as a topping and cheese!`
         document.querySelector('#feedback').textContent = message
     },
     shoppingList: function () {
