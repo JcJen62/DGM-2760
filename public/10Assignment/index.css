@@ -77,6 +77,7 @@ button {
   transition: ease-out 0.4s;
   margin-right: 1rem;
   margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 button:hover {
@@ -84,8 +85,13 @@ button:hover {
   color: white;
 }
 
-.feedback {
-  margin-top: 0.5rem;
+#hotelName {
+    padding-bottom: 0.3rem;
+}
+
+#picture {
+    padding-top: 0.7rem;
+    filter: drop-shadow(0 0 0.75rem grey);
 }
 
 footer {

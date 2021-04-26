@@ -1,36 +1,29 @@
-document.querySelector("#companyName").innerText = "Pizza Palace";
-document.querySelector("#companyMoto").innerText = "Literal Pizza Objects";
+document.querySelector("#companyName").innerText = "Hotels";
+document.querySelector("#companyMoto").innerText = "Find Your Dream Room";
 
-const question = {
-    stem: "Who is in the Tomb?",
-    option1: "Jerry",
-    option2: "Grant",
-    option3: "Tom",
-    option4: "Bugs Bunny",
-    display: () => {
-        document.querySelector('#stem').textContent = question.stem
-
-    },
-    checkAnswer: (userInput) => {
-        if (userInput === question.option2) {
-            document.querySelector('.feedback').textContent = "You are correct!!"
-        } else {
-            document.querySelector('.feedback').textContent = "Oh try again..."
-        }
+async function getHotelData() {
+    try {
+        const response = await fetch('hotels.json')
+        return await response.json()
+    } catch (error) {
+        console.error(error)
     }
 }
 
-var buttons = document.querySelectorAll('.btnClass')
+let hotelData = {}
+getHotelData().then(data => hotelData = data)
 
-buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        question.checkAnswer(btn.textContent)
+document.querySelectorAll('.btnHotel').forEach(btn => btn.addEventListener('click', getHotelInfo))
+
+function getHotelInfo(event){
+    let hotelChoice = hotelData.hotels.find(hotel => {
+        return event.target.id === hotel.name.toLowerCase()
     })
-}); 
 
-document.querySelector('#answerOne').textContent = question.option1
-document.querySelector('#answerTwo').textContent = question.option2
-document.querySelector('#answerThree').textContent = question.option3
-document.querySelector('#answerFour').textContent = question.option4
-
-question.display()
+    document.querySelector('#hotelName').textContent = `${hotelChoice.name} Hotel`
+    document.querySelector('#address').textContent = `${hotelChoice.address}`
+    document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`
+    document.querySelector('#gym').textContent = `${hotelChoice.gym}`
+    document.querySelector('#types').textContent = `${hotelChoice.roomTypes.join(', ')}`
+    document.querySelector('#picture').setAttribute('src', hotelChoice.picture)
+}

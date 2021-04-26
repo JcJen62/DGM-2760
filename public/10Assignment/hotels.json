@@ -6,7 +6,7 @@
         "gym": "Yes",
         "roomTypes": ["King", "Queen", "Twin"],
         "address": "751 W 200 S",
-        "picture": "room1.jpg"
+        "picture": "../Images/room1.jpg"
         },
         {
         "name": "Hilton",
@@ -14,7 +14,7 @@
         "gym": "No",
         "roomTypes": ["King", "Queen"],
         "address": "800 W 200 S",
-        "picture": "room2.jpg"
+        "picture": "../Images/room2.jpg"
         },
         {
         "name": "Embassy",
@@ -22,7 +22,7 @@
         "gym": "Yes",
         "roomTypes": ["King", "Queen", "Twin"],
         "address": "851 W 200 S",
-        "picture": "room3.jpg"
+        "picture": "../Images/room3.jpg"
         }
     ]
 }
