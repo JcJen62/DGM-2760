@@ -1,5 +1,5 @@
-document.querySelector("#companyName").innerText = "Grant's Tomb";
-document.querySelector("#companyMoto").innerText = "Rest in Peace";
+document.querySelector("#companyName").innerText = "Pizza Palace";
+document.querySelector("#companyMoto").innerText = "Literal Pizza Objects";
 
 const question = {
     stem: "Who is in the Tomb?",
