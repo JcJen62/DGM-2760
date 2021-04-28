@@ -78,9 +78,8 @@ figure {
   margin-top: 5rem;
   text-align: center;
   background-color: rgb(233, 233, 233);
-  width: 700px;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  width: 650px;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
   border-radius: 15px;
 }
 
