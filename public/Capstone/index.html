@@ -22,16 +22,50 @@
 
   <body>
     <div id="wrapper">
-      <nav id="navbar">
-        <ul class="mynav">
-          <li><a href="#welcome-section">My Top 10</a></li>
-          <li><a href="#projects">Popular</a></li>
-          <li><a href="#contact">Random Anime</a></li>
-        </ul>
-        <div class="keepOpen"></div>
-      </nav>
-      <main></main>
+      <main>
+        <div id="welcome-section">
+          <h1>Welcome to my Anime Page</h1>
+          <p>An Introduction to the World of Anime</p>
+        </div>
+        <div id="mainBody">
+          <div id="topFive">
+            <h2 class="bodyTitle">My Top Five Anime</h2>
+            <figure>
+              <img id="coverArt" />
+              <figcaption id="title"></figcaption>
+            </figure>
+            <p id="description"></p>
+            <div id="btnCenter">
+              <button class="btnNextPrevious" id="previous">Previous</button>
+              <button class="btnNextPrevious" id="next">Next</button>
+            </div>
+            <div class="keepOpen"></div>
+          </div>
+
+          <div id="popular">
+            <h2 class="bodyTitle">Most Popular Anime</h2>
+            <ul id="mostPopular"></ul>
+            <a
+              href="https://myanimelist.net/topanime.php"
+              target="_blank"
+              id="creditLink"
+              >According to MyAnimeList</a
+            >
+          </div>
+
+          <div id="randomAnime">
+            <h2 class="bodyTitle">Random Anime's for you</h2>
+            <button id="random">Generate Anime</button>
+            <h3 id="animeTitle"></h3>
+            <div id="randomContent">
+              <img id="poster" />
+          </div>
+          <div class="keepOpen"></div>
+          </div>
+        </div>
+      </main>
       <footer>&copy; 2020 &bull; Built by Jeremy Jensen</footer>
+      <script type="text/javascript" src="main.js"></script>
     </div>
     <!--end wrapper-->
   </body>

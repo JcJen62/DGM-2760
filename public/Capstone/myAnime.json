@@ -1,0 +1,29 @@
+{
+    "animes": [
+        {
+            "title": "Hunter X Hunter",
+            "description": "Hunter x Hunter is set in a world where Hunters exist to perform all manner of dangerous tasks like capturing criminals and bravely searching for lost treasures in uncharted territories.",
+            "cover": "../Images/HunterXHunter.jpg"
+        },
+        {
+            "title": "Attack on Titan",
+            "description": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+            "cover": "../Images/AttackOnTitan.jpg"
+        },
+        {
+            "title": "Fullmetal Alchemist Brotherhood",
+            "description": "The story of two alchemist brothers, Edward and Alphonse Elric, who want to restore their bodies after a disastrous failed attempt to bring their mother back to life through alchemy.",
+            "cover": "../Images/Fullmetal.jpg"
+        },
+        {
+            "title": "Demon Slayer",
+            "description": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
+            "cover": "../Images/Demon.jpg"
+        },
+        {
+            "title": "Jujutsu Kaisen",
+            "description": "The story follows high school student Yuji Itadori as he joins a secret organization of Jujutsu Sorcerers in order to kill a powerful Curse named Ryomen Sukuna, of whom Yuji becomes the host.",
+            "cover": "../Images/Jujutsu.jpg"
+        }
+    ]
+}

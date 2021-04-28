@@ -1,0 +1,24 @@
+{
+    "popularAnimes": [
+        {
+            "title": "Fullmetal Alchemist Brotherhood",
+            "Score": "9.18"
+        },
+        {
+            "title": "Attack on Titan Season 3 Part 2",
+            "Score": "9.11"
+        },
+        {
+            "title": "Steins Gate",
+            "Score": "9.11"
+        },
+        {
+            "title": "Gintama",
+            "Score": "9.09"
+        },
+        {
+            "title": "Hunter X Hunter",
+            "Score": "9.08"
+        }
+    ]
+}

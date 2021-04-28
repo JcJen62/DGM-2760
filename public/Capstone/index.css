@@ -6,7 +6,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+figure {
   padding: 0;
   margin: 0;
 }
@@ -31,57 +32,116 @@ body {
   font-size: 16px;
 }
 
-nav {
-  background-color: #c4f5ff;
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
-  z-index: 10;
+#welcome-section {
   display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 0;
-}
-nav ul.mynav {
-  display: flex;
-  margin-right: 2rem;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  height: 50vh;
+  background-image: url("../Images/AnimeBack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
-nav ul.mynav li a {
-  display: block;
-  padding: 0.5rem;
-  color: black;
-  text-decoration: none;
-  height: 100%;
+#mainBody{
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-nav ul.mynav li a:hover {
-  background-color: #b7d0ee;
-  color: #000;
-}
-nav ul.mynav li.active a {
-  background-color: #66a5b3;
+.bodyTitle {
+  border-bottom: 1px solid black;
+  width: 550px;
 }
 
-/* --- OTHER --- */
+ #topFive {
+  margin: 0 auto;
+  width: 960px;
+  margin-bottom: 2%;
+}
+
+figure {
+  float: right;
+  padding-left: 1rem;
+}
+
+#title{
+  text-align: center;
+}
+
+#btnCenter {
+  text-align: center;
+}
+
+#description {
+  margin-top: 5rem;
+  text-align: center;
+  background-color: rgb(233, 233, 233);
+  width: 700px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 15px;
+}
+
+#popular {
+  margin: 0 auto;
+  width: 960px;
+  margin-bottom: 2%;
+}
+
+#creditLink {
+  padding-left: 2rem;
+}
+
+#randomAnime {
+  margin: 0 auto;
+  width: 960px;
+} 
+
+#random{
+  margin-bottom: 1rem;
+}
+
+#randomContent {
+  float: right;
+}
+
+button {
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(46, 53, 71);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0px;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgb(46, 53, 71);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button:hover {
+  box-shadow: inset 0 100px 0 0 rgb(46, 53, 71);
+  color: white;
+}
+
 .keepOpen {
   clear: both;
 }
 
- /* --- WRAPPER --- */
- div#wrapper {
-    margin: 0 auto;
-  }
+div#wrapper {
+  width: 100%;
+}
 
-/* --- FOOTER --- */
 footer {
   text-align: center;
-  color: #000;
+  color: white;
+  background-color: rgb(46, 53, 71);
   padding: 0.5rem;
   font-size: 0.8rem;
   font-weight: 600;
